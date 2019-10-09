@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" defer></script>
+    <script src="index.js" defer></script>
+    <style>
+        .wrapper {
+            border: 2px solid lightgreen;
+            width: 100%;
+            height: 100%;
+            max-width: 480px;
+            max-height: 680px;
+            overflow-y: auto;
+            margin: auto;
+        }
+
+        [data-lazy-img] {
+            transition-duration: 1s;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div id="root" class="wrapper">
+    <img data-lazy-img="https://media.mnn.com/assets/images/2019/01/grumpy_cat.jpg.653x0_q80_crop-smart.jpg">
+    <p>Proin sagittis, mi at venenatis porttitor, ex risus fringilla turpis, sed vestibulum dui lacus a orci.
+        Pellentesque
+        congue nibh augue, sit amet feugiat lectus semper at. Fusce cursus ligula purus, at ornare felis iaculis et.
+        Cras
+        suscipit nunc eu lorem molestie tristique. Praesent sodales nisi in auctor molestie. Mauris interdum, elit in
+        mollis
+        sagittis, nisl tortor volutpat velit, vel scelerisque lectus justo a dui. Etiam maximus, lectus sed varius
+        aliquam,
+        dui nulla tempus leo, id bibendum tellus enim id dui. Nam id turpis vitae velit porttitor laoreet id at leo.
+        Mauris
+        sit amet dictum felis, ut lobortis quam. Suspendisse non leo eget eros accumsan lacinia.
+    </p>
+    <img data-lazy-img="https://pbs.twimg.com/profile_images/1080545769034108928/CEzHCTpI_400x400.jpg">
+    <p>Mauris a libero quis purus pellentesque tincidunt a id elit. Aliquam suscipit tortor vel varius venenatis.
+        Maecenas a
+        turpis sed ipsum fermentum tempus id eget purus. Vestibulum ex erat, ultrices eu suscipit non, scelerisque sit
+        amet
+        risus. Duis accumsan, neque vel pretium mollis, nulla lorem posuere tortor, sit amet venenatis dui quam et erat.
+        Curabitur efficitur urna tellus, sed sodales felis vestibulum id. Vivamus id sem ligula. Aliquam ornare auctor
+        enim
+        in aliquam. Etiam gravida faucibus libero a tristique. Praesent maximus turpis nec nibh imperdiet tempus.
+        Integer
+        leo ipsum, dignissim id diam vel, rhoncus vulputate mi. Ut ut blandit sem. Integer imperdiet luctus ultricies.
+        Nullam et tincidunt elit. Nunc cursus lorem non dolor porttitor vehicula.
+    </p>
+    <img data-lazy-img="http://www.rspcasa.org.au/wp-content/uploads/2019/01/Adopt-a-cat-or-kitten-from-RSPCA.jpg">
+    <p>Proin at egestas lorem. Vivamus sit amet vestibulum lacus, sed imperdiet enim. Vestibulum non congue ligula.
+        Maecenas
+        condimentum dignissim ipsum, et volutpat eros egestas et. Aenean eu tellus sed arcu aliquet consequat. Morbi
+        porta
+        viverra enim quis tristique. Nullam a risus aliquam, tempor mi eget, facilisis tellus. Nunc quam purus,
+        fermentum id
+        lorem sit amet, bibendum faucibus eros. Etiam vitae condimentum odio. Maecenas quis tempus orci, vel auctor
+        lectus.
+        Integer id tincidunt est, blandit tincidunt purus.
+    </p>
+    <img data-lazy-img="https://www.thesprucepets.com/thmb/st2K40YnRkWUc3P_01lHYzflk7s=/3558x2363/filters:no_upscale():max_bytes(150000):strip_icc()/Cat-rolling-GettyImages-165893132-58ac5ef05f9b58a3c90a144f.jpg">
+    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur lobortis
+        ultrices
+        mi, in interdum urna dictum sit amet. Aenean porta ex dolor, in fringilla nisi tincidunt sed. Aliquam vel velit
+        eu
+        turpis imperdiet varius a aliquam diam. Fusce luctus sagittis ex, sed vulputate nunc. Pellentesque habitant
+        morbi
+        tristique senectus et netus et malesuada fames ac turpis egestas. Integer quis maximus tellus. Donec euismod
+        scelerisque sem hendrerit suscipit. Nullam gravida aliquam finibus.
+    </p>
+    <img data-lazy-img="https://sadanduseless.b-cdn.net/wp-content/uploads/2019/07/awkwardly-sitting-cats1.jpg">
+    <p>Ut dictum enim neque, at vestibulum purus viverra quis. Quisque tincidunt ut turpis sit amet commodo. Maecenas
+        tincidunt nulla ut tincidunt consectetur. Proin diam elit, dapibus vitae ligula vitae, posuere ultrices nibh.
+        Donec
+        vitae ex venenatis, volutpat velit ac, luctus dui. Fusce ultrices efficitur mollis. Proin consequat volutpat
+        gravida. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc
+        scelerisque
+        vitae sapien non lacinia. Sed efficitur eros neque, nec fermentum augue convallis sit amet. Mauris quam libero,
+        volutpat vitae dignissim ut, gravida a lectus. Integer sodales vulputate massa, sed ultricies massa maximus id.
+        Duis
+        diam libero, scelerisque id turpis in, malesuada blandit ligula. Ut tincidunt posuere quam in auctor.
+    </p>
+    <img data-lazy-img="https://timesofindia.indiatimes.com/thumb/msid-67586673,width-800,height-600,resizemode-4/67586673.jpg">
+</div>
+</body>
+</html>
